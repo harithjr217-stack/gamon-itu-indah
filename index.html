@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gamon itu biasa. Website kata-kata untuk semua orang yang pernah terluka dan belajar untuk kuat.">
+    <title>Gamon Itu Biasa</title>
+
+    <style>
+        :root {
+            --bg-main: #1e1e2f;
+            --bg-card: rgba(0, 0, 0, 0.45);
+            --text-main: #ffffff;
+            --text-soft: #dddddd;
+            --accent: #ffd369;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #1e1e2f, #3a3a5f);
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 60px 20px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            color: var(--accent);
+        }
+
+        header p {
+            margin-top: 10px;
+            color: var(--text-soft);
+            font-size: 18px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            max-width: 900px;
+            width: 100%;
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            font-size: clamp(16px, 2.5vw, 20px);
+        }
+
+        .quote {
+            font-style: italic;
+            color: var(--text-soft);
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Aksesibiliti tambahan */
+        a {
+            color: var(--accent);
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Gamon Itu Biasa</h1>
+    <p>Untuk semua hati yang sedang belajar melepaskan</p>
+</header>
+
+<main>
+    <section class="card" aria-label="Kata-kata motivasi gamon">
+        <p>
+            Gamon itu biasa.  
+            Ia bukan tanda kelemahan,  
+            tapi bukti bahawa kita pernah mencintai dengan sepenuh hati.
+        </p>
+
+        <p>
+            Ada hari kita kuat,  
+            ada hari kenangan datang tanpa izin.  
+            Itu normal,  
+            kerana hati juga manusia.
+        </p>
+
+        <p>
+            Tak perlu paksa diri untuk cepat lupa.  
+            Biarkan masa menyembuhkan,  
+            dan biarkan diri belajar menerima.
+        </p>
+
+        <p class="quote">
+            “Move on bukan bermaksud melupakan,  
+            tapi menerima bahawa tidak semua yang kita harapkan akan tinggal.”
+        </p>
+    </section>
+</main>
+
+<footer>
+    © 2025 • Gamon Itu Biasa • Untuk Semua Orang
+</footer>
+
+</body>
+</html>
